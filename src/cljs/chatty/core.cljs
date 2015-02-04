@@ -3,8 +3,9 @@
   (:require [om.core :as om :include-macros true]
             [om.dom :as dom :include-macros true]
             [sablono.core :as html :refer-macros [html]]
-            [taoensso.sente :as s]
-            ))
+            [taoensso.sente :as s]))
+
+(enable-console-print!)
 
 (defonce app-state (atom {:history []}))
 
